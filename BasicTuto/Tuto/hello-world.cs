@@ -2,7 +2,10 @@
 Run your first program
 Declare and use variables
 Work with strings
-
+Remove Whitespace from strings
+Replace parts of a string
+Change string case
+Check for substrings
 
 */
 
@@ -43,3 +46,15 @@ Console.WriteLine(sayHello);
 sayHello = sayHello.Replace("Hello", "Greetings");
 
 Console.WriteLine(sayHello);
+
+Console.WriteLine(sayHello.ToUpper());
+Console.WriteLine(sayHello.ToLower());
+
+String songLyrics = "Wept for solace and submit to faith!!";
+Console.WriteLine(songLyrics.Contains("faith"));
+Console.WriteLine(songLyrics.Contains("mire"));
+
+Console.WriteLine(songLyrics.StartsWith("Wept"));
+Console.WriteLine(songLyrics.StartsWith("Solace"));
+Console.WriteLine(songLyrics.EndsWith("!"));
+Console.WriteLine(songLyrics.StartsWith("faith"));
